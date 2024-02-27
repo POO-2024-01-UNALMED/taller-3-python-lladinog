@@ -46,8 +46,9 @@ class TV:
     def getNumTV():
         return TV.numTV
         
-    def setNumTV(self):
-        self.numTV = TV.numTV
+    @staticmethod
+    def setNumTV():
+        TV.numTV = TV.numTV
 
     def turnOn(self):
         self.estado = True
